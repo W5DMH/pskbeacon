@@ -1,5 +1,7 @@
 # CWBeacon
-Poorly coded first try at a morse code beacon with a graphical front end. This script uses the gerryk https://github.com/gerryk/cwbeacon beacon.py script to fire a relay attached to a GPIO pin to key a transceiver with morse code to send a beacon out.
+Poorly coded first try at a morse code beacon with a graphical front end. This script uses the gerryk https://github.com/gerryk/cwbeacon beacon.py script to fire a relay attached to a GPIO pin to key a transceiver with morse code to send a beacon out. 
+
+ You must get the beacon.py script from https://github.com/gerryk/cwbeacon put it in the same folder as the other scripts and then rename it to txbeacon.py for this script to function. 
 
 The primary script accepts input from the user, and creates a config file, then calls a subprocess (beaconout.py) config file is read by "beaconout.py"  to create a string to call the Gerry K beacon.py (I renamed to txbeacon.py) 
 
